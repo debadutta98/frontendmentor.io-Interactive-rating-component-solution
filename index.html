@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./dist/style.css" />
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+     input[type="radio"]:checked + label {
+      background-color: hsl(216, 12%, 54%);
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-DarkBlue-200">
+  <div class="flex justify-center">
+    <div class="card">
+      <div class="p-4" id="rating-form">
+        <img src="./images/icon-star.svg" class="rounded-full shadow-2xl p-3 shadow-slate-400" />
+        <h1 class="text-white font-bold font-overpass text-lg pt-2">
+          How did we do?
+        </h1>
+
+        <p class="font-overpass text-sm text-Grey-200 py-2">
+          Please let us know how we did with your support request. All
+          feedback is appreciated to help us improve our offering!
+        </p>
+
+        <div class="ratecontainer">
+          <input type="radio" value="1" name="ratings" id="1" class="hidden" />
+          <label for="1" class="rating">1</label>
+          <input type="radio" value="2" name="ratings" id="2" class="hidden" />
+          <label for="2" class="rating"> 2</label>
+          <input type="radio" value="3" name="ratings" id="3" class="hidden" />
+          <label for="3" class="rating"> 3</label>
+          <input type="radio" value="4" name="ratings" id="4" class="hidden" />
+          <label for="4" class="rating"> 4</label>
+          <input type="radio" value="5" name="ratings" id="5" class="hidden" />
+          <label for="5" class="rating"> 5</label>
+        </div>
+        <div class="py-3">
+          <button class="btn">SUBMIT</button>
+        </div>
+      </div>
+      <div class="p-4 flex items-center gap-5 flex-col text-center hidden" id="feedback">
+        <img src="./images/illustration-thank-you.svg" class="w-20 h-20" />
+        <span class="rounded-full text-orange-500 font-overpass text-xs shadow-2xl px-3 py-2 shadow-slate-500" id="text">You
+          selected 4 out of 5</span>
+        <h2 class="text-white font-overpass text-lg font-bold">Thank you!</h2>
+        <p class="pb-3 text-Grey-200 text-xs font-overpass">
+          We appreciate you taking the time to give a ratings. if you ever
+          need more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="attribution font-overpass text-Grey-100 pt-2">
+    Challenge by
+    <a class="underline"href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a class="underline" href="https://github.com/debadutta98/">Debadutta Panda</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
